@@ -146,7 +146,7 @@ header{
 .email{
     background:gray;
     color:white;
-    min-width: 490px;
+    width: 490px;
     height: 200px;
     padding: 0 0px 0 20px;
     margin:0 27px 0 0;
