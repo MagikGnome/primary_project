@@ -10,99 +10,89 @@
 </head>
 <body>
     <header>
-        <ul class="head">
-            <li>
-                <a href="#"><img src="img/logo.png"></a>
-            </li>
-            <li>
+        <div>
+            <a href="#"><img src="img/logo.png"></a>
+        </div>
+            <div>
                 <a href="#">Каталог</a>
-            </li>
-            <li>
                 <a href="#">Доставка и оплата</a>
-            </li>
-            <li>
                 <a href="#">О Компании</a>
-            </li>
-            <li>
+            </div>
+            <div class="modals">
                 <a href="#" class="search"></a>
-            </li>
-            <li>
                 <a href="#" class="login">Вход</a>
-            </li>
-            <li>
                 <a href="#" class="basket">Пусто</a>
-            </li>
-        </ul>
+            </div>
     </header>
     <main>
         <div class="banners">
-            <div class="icecreams">    
+            <div class="container_icecreams"> 
                     <div class="toogle">
-                        <input type="radio" name="ice">
+                        <input type="radio" name="ice" class="icecreams">
                         <input type="radio" name="ice">
                         <input type="radio" name="ice">
                     </div>
                 <div class="both">
                     <h1>Крем-брюле и пломбир с малиновым джемом</h1>
-                    <a href="#">Давайте оба!</a>
+                    <a href="#" class="btn">Давайте оба!</a>
                 </div>
                 <p>
                     С 10 до 20, ежедневно
                     8 812 450-25-25
                 </p>
-            </div>
+                </div>
             <div class="actions">
-                <div class="raspberry">
+                <div class="container_raspberry">
                     <h3>Малинка даром!</h3>
                     <p>
                         При покупке 2 кг любого фруктового мороженного, добавим
                         в ваш заказ банку малинового варенья бесплатно.
                     </p>
-                    <a href="#">Хочу варенье!</a>
+                    <a href="#" class="btn">Хочу варенье!</a>
                 </div>
-                <div class="chocolate">
+                <div class="container_chocolate">
                     <h3>Шоколадки даром!</h3>
                     <p>
                         При покупке 2 кг пломбира, добавим в ваш заказ упакоку
                         вкуснейшей шоколодной присыпки совершенно бесплатно.
                     </p>
-                    <a href="#">Хочу шоколадки!</a>
+                    <a href="#" class="btn">Хочу шоколадки!</a>
                 </div>
             </div>
         </div>
-        <div class="hits">
-            <div class="it">
+        <div class="items">
+            <div class="cell">
                 <div class="item">
                     <img src="img/icecram_orange.png">
                     <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-                    <a href="#">Оформить заказ</a>
+                    <a href="#" class="btn">Оформить заказ</a>
                     <p><span>415₽</span>/кг</p>
                     <img class="hit" src="img/hit.png">
                 </div>
             </div>
-            <div class="it">
+            <div class="cell">
                 <div class="item">
                     <img src="img/icecream_cofee.png">
                     <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-                    <a href="#">Оформить заказ</a>
+                    <a href="#" class="btn">Оформить заказ</a>
                     <p><span>415₽</span>/кг</p>
                     <img class="hit" src="img/hit.png">
                 </div>
             </div>
-            <div class="it">
+            <div class="cell">
                 <div class="item">
                     <img src="img/icecream_strawberry.png">
                     <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-                    <a href="#">Оформить заказ</a>
+                    <a href="#" class="btn">Оформить заказ</a>
                     <p><span>415₽</span>/кг</p>
                     <img class="hit" src="img/hit.png">
                 </div>
             </div>
-            <div class=it>
+            <div class=cell>
                 <div class="item">
                     <img src="img/icecream_caramel.png">
                     <a href="#">Сливочное крем-брюле с карамелной подливкой</a>
-                    <a href="#">Оформить заказ</a>
+                    <a href="#" class="btn">Оформить заказ</a>
                     <p><span>415₽</span>/кг</p>
                     <img class="hit" src="img/hit.png">
                 </div>
@@ -142,7 +132,7 @@
                 </li>
             </ul>
         </article>
-        <div class="link">
+        <div class="actions">
             <div class="blog">
                 <h4>Новое в нашем блоге</h4>
                 <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
@@ -155,7 +145,7 @@
                 </p>
                 <form id="email">
                     <input type="email" name="email">
-                    <button form="email">Отправить</button>
+                    <button form="email" class="btn">Отправить</button>
                 </form>
             </div>
         </div>
@@ -173,7 +163,7 @@
                         (с 10 до 20 ежедневно)
                     </span>
                 </p>
-                <a href="#">Форма обратной связи</a>
+                <a href="#" class="btn">Форма обратной связи</a>
             </div>
         </div>
     </main>
