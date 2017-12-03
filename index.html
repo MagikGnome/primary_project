@@ -28,7 +28,7 @@
         <div class="banners">
             <div class="container_icecreams"> 
                     <div class="toogle">
-                        <input type="radio" name="ice" class="icecreams">
+                        <input type="radio" name="ice">
                         <input type="radio" name="ice">
                         <input type="radio" name="ice">
                     </div>
@@ -67,7 +67,6 @@
                     <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                     <a href="#" class="btn">Оформить заказ</a>
                     <p><span>415₽</span>/кг</p>
-                    <img class="hit" src="img/hit.png">
                 </div>
             </div>
             <div class="cell">
@@ -76,7 +75,6 @@
                     <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                     <a href="#" class="btn">Оформить заказ</a>
                     <p><span>415₽</span>/кг</p>
-                    <img class="hit" src="img/hit.png">
                 </div>
             </div>
             <div class="cell">
@@ -85,7 +83,6 @@
                     <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                     <a href="#" class="btn">Оформить заказ</a>
                     <p><span>415₽</span>/кг</p>
-                    <img class="hit" src="img/hit.png">
                 </div>
             </div>
             <div class=cell>
@@ -94,7 +91,6 @@
                     <a href="#">Сливочное крем-брюле с карамелной подливкой</a>
                     <a href="#" class="btn">Оформить заказ</a>
                     <p><span>415₽</span>/кг</p>
-                    <img class="hit" src="img/hit.png">
                 </div>
             </div>
         </div>
@@ -144,42 +140,58 @@
                     всякой ненужной ерунды. Честно =) 
                 </p>
                 <form id="email">
-                    <input type="email" name="email">
-                    <button form="email" class="btn">Отправить</button>
+                    <input type="email" name="email" placeholder="Почта">
+                    <button form="email" class="btn" >Отправить</button>
                 </form>
             </div>
         </div>
-        <div class="map">
-            <div class="feedback">
-                <p>
-                    <span>
-                        ул. Большая Конюшенная 19/8,
-                        Санкт-Петербург
-                    </span>
-                </p>
-                <p>
-                    <span>
-                        8 812 450-25-25
-                        (с 10 до 20 ежедневно)
-                    </span>
-                </p>
-                <a href="#" class="btn">Форма обратной связи</a>
-            </div>
+        <div class="map" id="map">
+                <div class="feedback">
+                    <p>
+                        <span>
+                            ул. Большая Конюшенная 19/8,
+                            Санкт-Петербург
+                        </span>
+                    </p>
+                    <p>
+                        <span>
+                            8 812 450-25-25
+                            (с 10 до 20 ежедневно)
+                        </span>
+                    </p>
+                    <a href="#" class="btn">Форма обратной связи</a>
+                </div>
         </div>
     </main>
     <footer>
         <div class="contacts">
         </div>
-        <div class="">
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
+        <div class="information">
+            <a href="#">Для поставщиков</a>
+            <a href="#">О производстве</a>
+            <a href="#">Наши документы</a>
+            <a href="#">Экологические стандарты</a>
         </div>
-        <div>
-            <img src="">
-            <span>Сделано HTML Academy © 2017</span>
+        <div class="creator">
+            <span>Сделано <a href="#">HTML Academy</a> © 2017</span>
         </div>
     </footer>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIw-MBjEF__bNe30klKtbhRKWAYcXGE50&callback=initMap">
+  </script>
+  <script>
+          function initMap() {
+            var uluru = {lat:59.938808, lng:30.323094};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 18,
+              center: {lat:59.9391009,lng:30.3239469},
+              disableDefaultUI: true
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+  </script>
 </body>
 </html>

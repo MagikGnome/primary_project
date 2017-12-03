@@ -39,14 +39,24 @@ header a{
 .container_icecreams{
     min-height: 533px;
     display: flex;
+    justify-content: center;
 }
 .toogle{
     display:flex;
     align-items: flex-end;
 }
 .both{
-    display:flex;
-
+    display:flex;   
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding:0 0px 30px 120px;
+    max-width:600px;
+    text-align: center;
+}
+.container_icecreams p{
+    max-width:180px;
+    text-align: right;
 }
 .actions{
     display: flex;
@@ -94,10 +104,9 @@ header a{
     position: relative;
     padding:5px 13px 0 13px;
 }
-.hit{
-    width:61px;
-    position:absolute;
-    bottom: 338px;
+.item::before{
+    content: url('/img/hit.png');
+    position: absolute;
 }
 .items a{
     color:white;
@@ -151,6 +160,10 @@ header a{
     color:black;
 
 }
+.both .btn{
+    display: block;
+    max-height: 24px; 
+}
 .email{
     background:gray;
     color:white;
@@ -177,7 +190,7 @@ header a{
       display: inline;
 }
 .feedback{
-
+    display: block;
     background-color: white;
     border:0px solid black;
     border-radius: 20px 20px;
@@ -206,9 +219,37 @@ a.btn{
     text-decoration: none;
     background-color: #ec5a3d;
     text-align: center;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 10px 10px 10px;
     border:0px solid black;
     border-radius:20px 20px;
     box-shadow: 5px 0px 2px #ec5a3d;
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   }
+.map{
+    margin: 30px 0 0 0;
+    width:1200px;
+    height: 600px;
+}
+footer{
+    color:rgb(255, 255, 255);
+    display: flex;
+    max-height: 50px;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:flex-start;
+    margin:0 150px 0 0;
+}
+footer a{
+    margin:5px 0 0 10px;
+    display: inline-block;
+    text-decoration:none;
+    border-bottom: 1px dashed white; 
+    color:white;
+}
+.creator:before{
+    content: url('/img/logo-htmlacademy.png');
+}
