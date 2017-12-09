@@ -9,6 +9,10 @@
     <title>Index</title>
 </head>
 <body>
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+    <div class="site-wrapper">
     <header>
         <div>
             <a href="#"><img src="img/logo.png"></a>
@@ -28,13 +32,31 @@
         <div class="banners">
             <div class="container_icecreams"> 
                     <div class="toogle">
-                        <input type="radio" name="ice">
-                        <input type="radio" name="ice">
-                        <input type="radio" name="ice">
+                        <label type="radio" for="product-1"></label>
+                        <label type="radio" for="product-2"></label>
+                        <label type="radio" for="product-3"></label>
                     </div>
                 <div class="both">
-                    <h1>Крем-брюле и пломбир с малиновым джемом</h1>
-                    <a href="#" class="btn">Давайте оба!</a>
+                    <ul class="slider-list">
+                      <li class="slider-item slide" id="slide1">
+                        <h3 class="slide-title">
+                            Крем-брюле и пломбир с малиновым джемом
+                      </h3>
+                      <a class="btn slide-btn" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide2">
+              <h3 class="slide-title">
+                Шоколадный пломбир и лимонный сорбет
+              </h3>
+              <a class="btn slide-btn" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide3">
+              <h3 class="slide-title">
+                Пломбир с помадкой и клубничный щербет
+              </h3>
+              <a class="btn slide-btn" href="#">Давайте оба!</a>
+            </li>
+          </ul>
                 </div>
                 <p>
                     С 10 до 20, ежедневно
@@ -176,6 +198,7 @@
             <span>Сделано <a href="#">HTML Academy</a> © 2017</span>
         </div>
     </footer>
+    </div>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIw-MBjEF__bNe30klKtbhRKWAYcXGE50&callback=initMap">
   </script>

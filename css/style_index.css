@@ -4,9 +4,9 @@
 }
 body{
     font-family: 'Roboto',Arial, sans-serif;
+}
+.site-wrapper{
     background-repeat: no-repeat;
-    background-color: #849d8f;
-    background-image: url("../img/icecreams_1.png");
     background-position-x: center;
     display: flex;
     flex-direction: column;
@@ -40,6 +40,7 @@ header a{
     min-height: 533px;
     display: flex;
     justify-content: center;
+    margin:0 0 30px 0;
 }
 .toogle{
     display:flex;
@@ -160,10 +161,6 @@ header a{
     color:black;
 
 }
-.both .btn{
-    display: block;
-    max-height: 24px; 
-}
 .email{
     background:gray;
     color:white;
@@ -203,7 +200,7 @@ header a{
       2px -2px white,
       2px 2px white;
 }
-  .underline {
+.underline {
     background-size: 1px 1em;
     box-shadow:
       inset 0 -0.175em white,
@@ -211,20 +208,55 @@ header a{
     display: inline;
 }
 a.btn{
-    display:inline-block;
-    font-size: 18px;
-    color:white;
-    font-weight: bold;
-    font-family:'Roboto',Arial,sans-serif;
-    text-decoration: none;
-    background-color: #ec5a3d;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 41px;
     text-align: center;
-    padding: 10px 10px 10px 10px;
-    border:0px solid black;
-    border-radius:20px 20px;
-    box-shadow: 5px 0px 2px #ec5a3d;
-    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-  }
+    color: #ffffff;
+    vertical-align: top;
+    text-decoration: none;
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+    background: #f26843;
+    background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+    border-radius: 50px;
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+    border: none;
+    cursor: pointer;
+}
+a.btn:hover {
+    background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+a.btn:active {
+    background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+    box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+.both .btn{
+    font-size: 31px;
+    padding: 12px 44px;
+}
+.slide {
+  display: none;
+}
+.slide-title {
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 800;
+}
+.toogle label {
+   display: inline-block;
+   width: 17px;
+   height: 17px;
+   margin-right: 8px;  
+   vertical-align: top; 
+   background-color: transparent;
+   border: 2px solid #ffffff;
+   border-radius: 50%;
+   cursor: pointer;
+}
 .map{
     margin: 30px 0 0 0;
     width:1200px;
@@ -252,4 +284,48 @@ footer a{
 }
 .creator:before{
     content: url('/img/logo-htmlacademy.png');
+}
+.site-wrapper::before,
+.site-wrapper::after {
+  content: "";
+  visibility: hidden;
+}
+
+.site-wrapper::before {
+  background-image: url("/img/ixe_cream_2.png");
+}
+
+.site-wrapper::after {
+  background-image: url("/img/icecream_3.png");
+}
+.slider-list {
+  list-style: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}
+#product-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url("/img/icecreams_1.png");
+}
+#product-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  background-image: url("/img/icecream_2.png");
+}
+#product-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  background-image: url("/img/icecream_3.png");
+}
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
+  background-color: #ffffff;
 }
