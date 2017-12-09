@@ -309,15 +309,15 @@ footer a{
 }
 #product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
-  background-image: url("/img/icecreams_1.png");
+  background-image: url("../img/icecreams_1.png");
 }
 #product-2:checked ~ .site-wrapper {
   background-color: #8996a6;
-  background-image: url("/img/icecream_2.png");
+  background-image: url("../img/icecream_2.png");
 }
 #product-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
-  background-image: url("/img/icecream_3.png");
+  background-image: url("../img/icecream_3.png");
 }
 #product-1:checked ~ .site-wrapper #slide1,
 #product-2:checked ~ .site-wrapper #slide2,
