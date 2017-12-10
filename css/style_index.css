@@ -10,8 +10,10 @@ body{
     background-position-x: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    min-width: 900px; 
+    min-width: 900px;
+    padding:0 0 0 27px; 
 }
 header{
     max-height: 73px;
@@ -28,7 +30,15 @@ header a{
     color: #ffbc9e;
 }
 .modals{
-    margin:25px 0 0 100px;
+    margin:25px 0 0 370px;
+}
+.container_icecreams p{
+    font-size: 14px;
+}
+.contact_number{
+    float: right;
+    font-size: 22px;
+    font-weight: 600;
 }
 .modals a{
     text-decoration: none;
@@ -90,7 +100,7 @@ header a{
 .container_icecreams{
     min-height: 533px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin:0 0 30px 0;
 }
 .toogle{
@@ -277,12 +287,37 @@ header a{
         inset 0 0px white;
       display: inline;
 }
+.place{
+    position: relative;
+}
 .feedback{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top:50px;
+    right:100px;
     background-color: white;
     border:0px solid black;
     border-radius: 20px 20px;
-    max-width:300px;
+    min-width:302px;
+}
+.data{
+    font-family: 'Roboto',Arial,sans-serif;
+    padding:32px 0 28px 0;
+}
+.data p{
+    font-size:14px;
+    line-height: 1.7;
+}
+.data span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.data .btn{
+    margin:20px 0 0 0;;
+    padding:0px 30px;
 }
 .text-shadow {
     text-shadow:
@@ -313,14 +348,17 @@ header a{
     box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
     border: none;
     cursor: pointer;
+    outline: none;
 }
 .btn:hover {
     background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
     box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+    outline: none;
 }
 .btn:active {
     background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
     box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+    outline: none;
 }
 .both .btn{
     font-size: 31px;
@@ -348,10 +386,12 @@ header a{
    border-radius: 50%;
    cursor: pointer;
 }
-.map{
+.map{ 
+    position: relative;
+    right:25px;
     margin: 30px 0 0 0;
-    width:1200px;
-    height: 600px;
+    max-width:1200px;
+    min-height: 430px;
 }
 .place_input{
     width: 353px;
@@ -374,12 +414,10 @@ header a{
 .place_input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
 .place_input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
 .place_input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
-
-
 footer{
     color:rgb(255, 255, 255);
     display: flex;
-    max-height: 50px;
+    max-height: 103px;
 }
 .information{
     display: flex;
@@ -387,30 +425,38 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     align-items:flex-start;
-    margin:0 150px 0 0;
+    margin:22px 150px 0 0;
+    
+}
+.information a{
+    margin:8px 32px 0 0;
 }
 footer a{
     margin:5px 0 0 10px;
     display: inline-block;
     text-decoration:none;
-    border-bottom: 1px dashed white; 
+    border-bottom: 1px solid rgba(255,255,255,0.2); 
     color:white;
+}
+footer a:hover{
+    border-bottom: 1px solid rgb(167, 162, 148); 
+    color:#ffbc9e;
+}
+.information a:nth-child(1){
+    font-weight: 600;
+    position: relative;
+}
+.information a:nth-child(1):before{
+    content:url('../img/heart.png');
+    position: absolute;
+    left:-20px;
+}
+.creator{
+    margin:18px 0 0 100px;
 }
 .creator:before{
     content: url('../img/logo-htmlacademy.png');
-}
-.site-wrapper::before,
-.site-wrapper::after {
-  content: "";
-  visibility: hidden;
-}
-
-.site-wrapper::before {
-  background-image: url("../img/icecream_2.png");
-}
-
-.site-wrapper::after {
-  background-image: url("../img/icecream_3.png");
+    display: block;
 }
 .slider-list {
   list-style: none;

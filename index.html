@@ -60,7 +60,9 @@
                 </div>
                 <p>
                     С 10 до 20, ежедневно
+                    <span class="contact_number">
                     8 812 450-25-25
+                    </span>
                 </p>
                 </div>
             <div class="actions">
@@ -169,22 +171,29 @@
             </div>
         </div>
         </div>
-        <div class="map" id="map">
-                <div class="feedback">
-                    <p>
-                        <span>
-                            ул. Большая Конюшенная 19/8,
-                            Санкт-Петербург
-                        </span>
-                    </p>
-                    <p>
-                        <span>
-                            8 812 450-25-25
-                            (с 10 до 20 ежедневно)
-                        </span>
-                    </p>
-                    <a href="#" class="btn">Форма обратной связи</a>
+        <div class="place">
+            <div class="feedback">
+                <div class="data">
+                <p>
+                    Адрес главного офиса<br>
+                    и офлайн-магазина: <br>
+                   <span>
+                        ул. Большая Конюшенная <br>
+                        19/8, Санкт-Петербург <br>
+                    </span>
+                </p>
+                <p>
+                    Для заказов по телефону:<br>
+                    <span>
+                        8 812 450-25-25<br>
+                    </span>
+                        (с 10 до 20 ежедневно)
+                </p>
+                <a href="#" class="btn">Форма обратной связи</a>
                 </div>
+            </div>
+            <div class="map" id="map">
+            </div>
         </div>
     </main>
     <footer>
@@ -204,19 +213,7 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIw-MBjEF__bNe30klKtbhRKWAYcXGE50&callback=initMap">
   </script>
-  <script>
-          function initMap() {
-            var uluru = {lat:59.938808, lng:30.323094};
-            var map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 18,
-              center: {lat:59.9391009,lng:30.3239469},
-              disableDefaultUI: true
-            });
-            var marker = new google.maps.Marker({
-              position: uluru,
-              map: map
-            });
-          }
+  <script src="../js/index.js">
   </script>
 </body>
 </html>
