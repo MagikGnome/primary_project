@@ -7,7 +7,7 @@ function initMap() {
     });
     var marker = new google.maps.Marker({
     position:baloon,
-    icon:'../img/baloon.png',
+    icon:'/img/baloon.png',
     map: map
     });
 }
