@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&amp;subset=cyrillic" rel="stylesheet">
     <title>Index</title>
 </head>
-<body>
+<body id="body">
     <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
     <input class="visually-hidden" type="radio" id="product-2" name="toggle">
     <input class="visually-hidden" type="radio" id="product-3" name="toggle">
@@ -17,6 +17,7 @@
         <div>
             <a href="#"><img src="img/logo.png"></a>
         </div>
+        <div class="navigator">
             <div class="menu">
                 <a href="#">Каталог</a>
                 <a href="#">Доставка и оплата</a>
@@ -27,6 +28,7 @@
                 <a href="#" class="login">Вход</a>
                 <a href="#" class="basket">Пусто</a>
             </div>
+        </div>
     </header>
     <main>
         <div class="banners">
@@ -67,7 +69,7 @@
                 </div>
             <div class="actions">
                 <div class="container_raspberry">
-                    <h3>Малинка даром!</h3>
+                    <h2>Малинка даром!</h2>
                     <p>
                         При покупке 2 кг любого фруктового мороженного, добавим
                         в ваш заказ банку малинового варенья бесплатно.
@@ -75,7 +77,7 @@
                     <a href="#" class="btn">Хочу варенье!</a>
                 </div>
                 <div class="container_chocolate">
-                    <h3>Шоколадки даром!</h3>
+                    <h2>Шоколадки даром!</h2>
                     <p>
                         При покупке 2 кг пломбира, добавим в ваш заказ упакоку
                         вкуснейшей шоколодной присыпки совершенно бесплатно.
@@ -119,8 +121,8 @@
             </div>
         </div>
         <article class="info">
-            <h4>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства
-                на развес</h4>
+            <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства
+                на развес</h3>
             <ul>
                 <li>
                     <p>
@@ -209,6 +211,24 @@
             <span>Сделано <a href="#">HTML Academy</a> © 2017</span>
         </div>
     </footer>
+    <div class="modal_search">
+            <form action="">
+                <input type="text" name="search" id="search" class="place_input" placeholder="Что ищем?">
+            </form>
+        </div>
+        <div class="modal_login">
+            <form id="login">
+                <input type="email" id="mail_login" name="login" class="place_input" placeholder="Электронная почта">
+                <input type="password" id="mail_password" name="login" class="place_input" placeholder="Пароль">
+                <div>
+                    <button class="btn btn_login" form="login">Войти</button>
+                    <div>
+                        <a href="#">Забыли пароль?</a>
+                        <a href="#">Новая регистрация</a>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIw-MBjEF__bNe30klKtbhRKWAYcXGE50&callback=initMap">
