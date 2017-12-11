@@ -138,7 +138,6 @@ header .navigator{
     max-height: 229px;
     color:white;
     padding: 22px 30px 0 20px;
-    margin: 0 26px 0 27px;
     display: flex;
     flex-direction: column;
 }
@@ -155,7 +154,6 @@ header .navigator{
     max-width: 510px;
     max-height: 229px;
     padding: 22px 30px 0 20px;
-    margin: 0 26px 0 27px;
     display: flex;
     flex-direction: column;
 }
