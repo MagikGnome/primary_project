@@ -128,7 +128,7 @@ header .navigator{
     display: flex;
     justify-content: space-around;
 }
-.actions h3{
+.actions h2{
     font-size: 35px;
     margin:0 0 16px 0;
 }
