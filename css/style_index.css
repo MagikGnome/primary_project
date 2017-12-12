@@ -402,9 +402,7 @@ header .navigator{
    border-radius: 50%;
    cursor: pointer;
 }
-.map{ 
-    position: relative;
-    right:25px;
+.map{
     margin: 30px 0 0 0;
     max-width:1200px;
     min-height: 430px;
