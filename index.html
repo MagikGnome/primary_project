@@ -24,13 +24,38 @@
                 <a href="#">О Компании</a>
             </div>
             <div class="modals">
-                <a href="#" class="search"></a>
-                <a href="#" class="login">Вход</a>
-                <a href="#" class="basket">Пусто</a>
+                <div class="search">
+                    <a href="#" ></a>
+                            <div class="modal_search">
+                <form action="">
+            <input type="text" name="search" id="search" class="place_input" placeholder="Что ищем?">
+        </form>
+    </div>
+</div>
+        <div class="login">
+                <a href="#">Вход</a>
+                <div class="modal_login">
+        <form id="login">
+            <input type="email" id="mail_login" name="login" class="place_input" placeholder="Электронная почта">
+            <input type="password" id="mail_password" name="login" class="place_input" placeholder="Пароль">
+                <div>
+                    <button class="btn btn_login" form="login">Войти</button>
+                    <div class="registr">
+                        <a href="#">Забыли пароль?</a>
+                        <a href="#">Новая регистрация</a>
+                    </div>
+                </div>
+        </form>
+    </div>
+</div>
+        <div class="basket">
+                <a href="#">Пусто</a>
+        </div>
             </div>
         </div>
     </header>
     <main>
+        <div class="main_wrapper">
         <div class="banners">
             <div class="container_icecreams"> 
                     <div class="toogle">
@@ -173,6 +198,7 @@
             </div>
         </div>
         </div>
+    </div>
         <div class="place">
             <div class="feedback">
                 <div class="data">
@@ -191,7 +217,7 @@
                     </span>
                         (с 10 до 20 ежедневно)
                 </p>
-                <a href="#" class="btn">Форма обратной связи</a>
+                <a href="#" class="feedback_btn btn">Форма обратной связи</a>
                 </div>
             </div>
             <div class="map" id="map">
@@ -200,6 +226,10 @@
     </main>
     <footer>
         <div class="contacts">
+            <a href="#" class="twitter"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
         </div>
         <div class="information">
             <a href="#">Для поставщиков</a>
@@ -211,24 +241,23 @@
             <span>Сделано <a href="#">HTML Academy</a> © 2017</span>
         </div>
     </footer>
-    <div class="modal_search">
-            <form action="">
-                <input type="text" name="search" id="search" class="place_input" placeholder="Что ищем?">
-            </form>
-        </div>
-        <div class="modal_login">
-            <form id="login">
-                <input type="email" id="mail_login" name="login" class="place_input" placeholder="Электронная почта">
-                <input type="password" id="mail_password" name="login" class="place_input" placeholder="Пароль">
-                <div>
-                    <button class="btn btn_login" form="login">Войти</button>
-                    <div>
-                        <a href="#">Забыли пароль?</a>
-                        <a href="#">Новая регистрация</a>
-                    </div>
+    <div class="modal_wrapper">
+        <div class="modal_feedback">
+            <div class="feedback_header">
+                <h2>Мы обязательно вам ответим!</h2>
+                <div class="feedback_close">
+                    <div></div>
+                    <div></div>
                 </div>
+            </div>
+            <form id="feedback">
+                <input type="text" class="place_input" name="feedback" placeholder="Как вас зовут?">
+                <input type="email" class="place_input" name="feedback" placeholder="Ваша почта для ответа?">
+                <input type="text" class="place_input  " name="feedback" placeholder="Напишите что-нибудь...">
+                <button form="feedback" class="btn">Отправить</button>
             </form>
         </div>
+    </div>
     </div>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIw-MBjEF__bNe30klKtbhRKWAYcXGE50&callback=initMap">

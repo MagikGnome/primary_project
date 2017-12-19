@@ -11,15 +11,14 @@ function initMap() {
     map: map
     });
 }
-var modal_search = document.querySelector('.modal_search');
-var search = document.querySelector('.search');
-var modal_login = document.querySelector('.modal_login');
-var login = document.querySelector('.login');
-search.addEventListener('click',function(event) {
+var modal_wrapper= document.querySelector('.modal_wrapper');
+var feedback = document.querySelector('.feedback_btn');
+var feedback_close = document.querySelector('.feedback_close');
+feedback.addEventListener('click',function(event) {
     event.preventDefault();
-    modal_search.classList.toggle('search_open');
+    modal_wrapper.classList.toggle('feedback_open');
 });
-login.addEventListener('click',function(event) {
+feedback_close.addEventListener('click',function(event) {
     event.preventDefault();
-    modal_login.classList.toggle('login_open');
+    modal_wrapper.classList.toggle('feedback_open');
 });

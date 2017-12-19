@@ -1,9 +1,7 @@
 *{
+    font-family: 'Roboto',Arial, sans-serif;
     padding: 0;
     margin: 0;
-}
-body{
-    font-family: 'Roboto',Arial, sans-serif;
 }
 .site-wrapper{
     background-repeat: no-repeat;
@@ -13,7 +11,6 @@ body{
     justify-content: center;
     align-items: center;
     min-width: 900px;
-    padding:0 0 0 27px; 
 }
 header{
     min-width:1200px;
@@ -33,8 +30,6 @@ header .navigator{
 .menu a:hover{
     color: #ffbc9e;
 }
-.modals{
-}
 .container_icecreams p{
     font-size: 14px;
 }
@@ -43,58 +38,142 @@ header .navigator{
     font-size: 22px;
     font-weight: 600;
 }
-.modals a{
+.modals{
+    display: flex;
+}
+.modals > div{    
+    max-height: 31px;
+}
+.modals > div:hover > a{
+    background-color: white;
+    color:black;
+}
+.search > a{
+    margin:0 -15px 0 0;
     text-decoration: none;
-    border: 0px solid white;
     border-radius: 20px 20px;
     background-color:rgba(255,255,255,0.5);
-}
-.search{
     padding: 6px 7px;
 }
-.login{
+.login > a{
+    margin:0 -10px 0 0;
+    text-decoration: none;
+    border-radius: 20px 20px;
+    background-color:rgba(255,255,255,0.5);
     padding:6px 20px 6px 25px;
 }
-.basket{
+.basket > a{
+    margin:0 -10px 0 0;
+    text-decoration: none;
+    border-radius: 20px 20px;
+    background-color:rgba(255,255,255,0.5);
     padding:6px 34px 6px 24px;
 }
-.search:before{
+.search > a:before{
     content:url('../img/search.png');
     position: relative;
     top:3px;
 }
-.login:before{
+.login > a:before{
     content:url('../img/login.png');
     position: relative;
     top:3px;
     right:8px;
 }
-.basket:before{
+.basket > a:before{
     content:url('../img/basket.png');
     position: relative;
     top:3px;
     right:8px;
 }
-.search:hover:before{
+.search:hover > a:before{
     content:url('../img/search_hover.png');
     position: relative;
     top:3px;
 }
-.login:hover:before{
+.search{
+    margin:0 15px 0 0;
+    position: relative;
+}
+.modal_search{
+    display:none;
+    position:absolute;
+    min-width: 326px;
+    top:30px;
+    right:-5px;
+    background-color: #f8f7f4;
+    padding:20px 0px 20px 15px;
+    border-radius: 5px 5px;
+}
+.modal_search .place_input{
+    min-width: 300px;
+}
+.search:hover .modal_search{
+    display:flex;
+}
+.twitter{
+    background-image: url(../img/twitter.png);
+}
+.login{
+    margin:0 20px 0 0;
+    position: relative;
+}
+.login:hover > a:before{
     content:url('../img/login_hover.png');
     position: relative;
     top:3px;
     right:8px;
 }
-.basket:hover:before{
+.modal_login{
+    position: absolute;
+    right: -10px;
+    top:32px;
+    display:none;
+    display: column;
+    max-height: 214px;
+    max-width: 262px;
+    background-color: #f8f7f4;
+    padding:20px 15px 16px 15px;
+    border-radius:5px 5px;
+}
+.registr{
+    margin:5px 20px 0 0;
+    flex-direction: column;
+}
+.modal_login div{
+    display: flex;
+}
+.login:hover  .modal_login{
+    display: flex;
+}
+.modal_login .btn{
+    font-size:16px;
+    padding: 0 20px 0 20px;
+    margin:0 12px 0 0;
+}
+.modal_login .place_input{
+    margin:0px 0px 20px 0px;
+    min-width: 240px;
+}
+.modal_login .place_input:hover{
+    min-width: 238px;
+}
+.modal_login a{
+    text-decoration:none;
+    color:black;
+    font-size: 14px;
+    max-height: 18px;
+    border-bottom: 1px solid #b2b2b2; 
+}
+.modal_login a:hover{
+    border-bottom-color: #f9cdc4;
+    color:#e84d37;
+}
+.basket:hover a:before{
     content:url('../img/basket_hover.png');
     position: relative;
     top:3px;
     right:8px;
-}
-.modals a:hover{
-    background-color: white;
-    color:black;
 }
 .banners{
     color:white;
@@ -304,7 +383,8 @@ header .navigator{
       display: inline;
 }
 .place{
-    position: relative;
+    position:relative;
+    min-width: 100%;
 }
 .feedback{
     display: flex;
@@ -404,24 +484,30 @@ header .navigator{
 }
 .map{
     margin: 30px 0 0 0;
-    max-width:1200px;
     min-height: 430px;
+    
+}
+.main_wrapper{
+    max-width:1200px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 .place_input{
     padding:0 0 0 14px;
-    min-width: 353px;
     margin:0 15px 0 0;
     height: 37px;
     border:1px solid #d3d3d2;
     border-radius: 4px 4px;
 }
 .place_input:hover{
-    min-width: 351px;
     height:35px;
     border:2px solid #c7c6c5;
 }
 .place_input:focus{
-    min-width: 351px;
     height:35px;
     border:2px solid #8fbdec;
 }
@@ -509,49 +595,66 @@ footer a:hover{
 #product-3:checked ~ .site-wrapper label[for="product-3"] {
   background-color: #ffffff;
 }
-.modal_search{
-    display:none;
-    position:absolute;
-    top:59px;
-    left:47.5%;
+.modal_wrapper{
+    z-index: 10;
+    position: fixed;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal_feedback{
+    border-radius:10px 10px;
     background-color: #f8f7f4;
-    padding:20px 0px 20px 15px;
-    border-radius: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    padding:20px 25px 24px 24px;
 }
-.search_open{
-    display: block;
+.modal_feedback form{
+    display: flex;
+    flex-direction: column;
 }
-.modal_login{
-    position: absolute;
-    top:59px;
-    left:60%;
-    display:none;
-    display: column;
-    max-height: 214px;
-    max-width: 262px;
-    background-color: #f8f7f4;
-    padding:20px 0px 16px 15px;
-    border-radius:5px 5px;
+.modal_feedback .place_input{
+    margin:20px 0 0 0;
 }
-.modal_login .btn{
-    max-width:100px;
-    padding: 0 20px 0 20px;
+.modal_feedback .btn{
+    margin:20px 0 0 290px;
+    padding:0 24px 0 24px;
 }
-.modal_login .place_input{
-    margin:0px 0px 20px 0px;
-    min-width: 226px;
+.modal_feedback .place_input:nth-child(3){
+    padding-bottom:110px;
 }
-.modal_login a{
-    text-decoration:none;
-    color:black;
-    font-size: 14px;
-    max-height: 18px;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+.modal_feedback .place_input:nth-child(1){
+    margin-right: 141px;
 }
-.modal_login a:hover{
-    border-bottom: 1px solid rgb(167, 162, 148); 
-    color:#ffbc9e;
+.modal_feedback .place_input:nth-child(2){
+    margin-right: 141px;
 }
-.login_open{
-    display:flex;
+.feedback_open{
+    display: flex;
+}
+.feedback_header{
+    display: flex;
+}
+.feedback_close{
+    cursor: pointer;
+    margin:0 0 0 40px;
+}
+.feedback_close div{
+    position: relative;
+    display: inline-block;
+    width: 3px;
+    height: 25px;
+    background-color: black;
+}
+.feedback_close div:nth-child(1){
+    left: 7px;
+    transform:rotate(45deg);
+}
+.feedback_close div:nth-child(2){
+    transform:rotate(-45deg);
 }
