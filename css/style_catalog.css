@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #849d8f;
+}
+header{
+    min-width:1200px;
+    max-height: 73px;
+    display: flex;
+}
+header a{
+    margin: 0 0px 0 10px;
+    color:white;
+}
+header .navigator{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin:25px 0 0 0;
+}
+.menu a:hover{
+    color: #ffbc9e;
+}
+.container_icecreams p{
+    font-size: 14px;
+}
+.contact_number{
+    float: right;
+    font-size: 22px;
+    font-weight: 600;
+}
+.modals{
+    display: flex;
+}
+.modals > div{  
+    margin:0 20px 0 0;
+    max-height: 31px;
+}
+.modals > div:hover > a{
+    background-color: white;
+    color:black;
+}
+.search > a{
+    margin:0 -15px 0 0;
+    text-decoration: none;
+    border-radius: 20px 20px;
+    background-color:rgba(255,255,255,0.5);
+    padding: 6px 7px;
+}
+.login > a{
+    margin:0 -10px 0 0;
+    text-decoration: none;
+    border-radius: 20px 20px;
+    background-color:rgba(255,255,255,0.5);
+    padding:6px 20px 6px 25px;
+}
+.basket > a{
+    margin:0 -10px 0 0;
+    text-decoration: none;
+    border-radius: 20px 20px;
+    background-color:rgba(255,255,255,0.5);
+    padding:6px 24px 6px 24px;
+}
+.search > a:before{
+    content:url('../img/search.png');
+    position: relative;
+    top:3px;
+}
+.login > a:before{
+    content:url('../img/login.png');
+    position: relative;
+    top:3px;
+    right:8px;
+}
+.basket > a:before{
+    content:url('../img/basket.png');
+    position: relative;
+    top:3px;
+    right:8px;
+}
+.search:hover > a:before{
+    content:url('../img/search_hover.png');
+    position: relative;
+    top:3px;
+}
+.search{
+    margin:0 15px 0 0;
+    position: relative;
+}
+.modal_search{
+    display:none;
+    position:absolute;
+    min-width: 326px;
+    top:30px;
+    right:-5px;
+    background-color: #f8f7f4;
+    padding:20px 0px 20px 15px;
+    border-radius: 5px 5px;
+}
+.modal_search .place_input{
+    min-width: 300px;
+}
+.search:hover .modal_search{
+    display:flex;
+}
+.login{
+    margin:0 20px 0 0;
+    position: relative;
+}
+.login:hover > a:before{
+    content:url('../img/login_hover.png');
+    position: relative;
+    top:3px;
+    right:8px;
+}
+.modal_login{
+    position: absolute;
+    right: -10px;
+    top:32px;
+    display:none;
+    display: column;
+    max-height: 214px;
+    max-width: 262px;
+    background-color: #f8f7f4;
+    padding:20px 15px 16px 15px;
+    border-radius:5px 5px;
+}
+.registr{
+    margin:5px 20px 0 0;
+    flex-direction: column;
+}
+.modal_login div{
+    display: flex;
+}
+.login:hover  .modal_login{
+    display: flex;
+}
+.modal_login .btn{
+    font-size:16px;
+    padding: 0 20px 0 20px;
+    margin:0 12px 0 0;
+}
+.modal_login .place_input{
+    margin:0px 0px 20px 0px;
+    min-width: 240px;
+}
+.modal_login .place_input:hover{
+    min-width: 238px;
+}
+.modal_login a{
+    text-decoration:none;
+    color:black;
+    font-size: 14px;
+    max-height: 18px;
+    border-bottom: 1px solid #b2b2b2; 
+}
+.modal_login a:hover{
+    border-bottom-color: #f9cdc4;
+    color:#e84d37;
+}
+.basket:hover a:before{
+    content:url('../img/basket_hover.png');
+    position: relative;
+    top:3px;
+    right:8px;
+}
+.site-wrapper{
+    background-repeat: no-repeat;
+    background-position-x: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 900px;
+}
