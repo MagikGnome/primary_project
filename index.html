@@ -14,45 +14,56 @@
     <input class="visually-hidden" type="radio" id="product-3" name="toggle">
     <div class="site-wrapper">
     <header>
-        <div>
+        <div class="logo">
             <a href="index.html"><img src="img/logo.png"></a>
         </div>
         <div class="navigator">
-            <div class="menu">
-                <a href="catalog.html">Каталог</a>
-                <a href="#">Доставка и оплата</a>
-                <a href="#">О Компании</a>
-            </div>
-            <div class="modals">
-                <div class="search">
-                    <a href="#" ></a>
-                            <div class="modal_search">
-                <form action="">
-            <input type="text" name="search" id="search" class="place_input" placeholder="Что ищем?">
-        </form>
-    </div>
-</div>
-        <div class="login">
-                <a href="#">Вход</a>
-                <div class="modal_login">
-        <form id="login">
-            <input type="email" id="mail_login" name="login" class="place_input" placeholder="Электронная почта">
-            <input type="password" id="mail_password" name="login" class="place_input" placeholder="Пароль">
-                <div>
-                    <button class="btn btn_login" form="login">Войти</button>
-                    <div class="registr">
-                        <a href="#">Забыли пароль?</a>
-                        <a href="#">Новая регистрация</a>
+                <div class="menu">
+                    <div class="catalog">
+                        <a href="catalog.html">Каталог</a>
+                        <div class="modal_catalog">
+                            <span>Новинки</span>
+                            <ul>
+                                <li><a href="#">Сливочное</a></li>
+                                <li><a href="#">Щербеты</a></li>
+                                <li><a href="#">Фруктовый лед</a></li>
+                                <li><a href="#">Мелорин</a></li>
+                            </ul>
+                        </div>
                     </div>
+                    <a href="#" class="a_header"><span>Доставка и оплата</span></a>
+                    <a href="#" class="a_header"><span>О Компании</span></a>
                 </div>
-        </form>
-    </div>
-</div>
-        <div class="basket">
-                <a href="#">Пусто</a>
+                <div class="modals">
+                    <div class="search">
+                        <a href="#" ></a>
+                                <div class="modal_search">
+                    <form action="">
+                <input type="text" name="search" id="search" class="place_input" placeholder="Что ищем?">
+            </form>
         </div>
+        </div>
+            <div class="login">
+                    <a href="#">Вход</a>
+                    <div class="modal_login">
+            <form id="login">
+                <input type="email" id="mail_login" name="login" class="place_input" placeholder="Электронная почта">
+                <input type="password" id="mail_password" name="login" class="place_input" placeholder="Пароль">
+                    <div>
+                        <button class="btn btn_login" form="login">Войти</button>
+                        <div class="registr">
+                            <a href="#"><span>Забыли пароль?</span></a>
+                            <a href="#"><span>Новая регистрация</span></a>
+                        </div>
+                    </div>
+            </form>
+        </div>
+        </div>
+            <div class="basket">
+                    <a href="#">Пусто</a>
             </div>
-        </div>
+                </div>
+            </div>
     </header>
     <main>
         <div class="main_wrapper">
@@ -104,7 +115,7 @@
                 <div class="container_chocolate">
                     <h2>Шоколадки даром!</h2>
                     <p>
-                        При покупке 2 кг пломбира, добавим в ваш заказ упакоку
+                        При покупке 2 кг пломбира, добавим в ваш заказ упаковку
                         вкуснейшей шоколодной присыпки совершенно бесплатно.
                     </p>
                     <a href="#" class="btn">Хочу шоколадки!</a>
@@ -115,7 +126,7 @@
             <div class="cell">
                 <div class="item">
                     <img src="img/icecram_orange.png">
-                    <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                    <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                     <a href="#" class="btn">Оформить заказ</a>
                     <p><span>415₽</span>/кг</p>
                 </div>
@@ -217,7 +228,7 @@
                     </span>
                         (с 10 до 20 ежедневно)
                 </p>
-                <a href="#" class="feedback_btn btn">Форма обратной связи</a>
+                <a href="#" class="btn">Форма обратной связи</a>
                 </div>
             </div>
             <div class="map" id="map">
