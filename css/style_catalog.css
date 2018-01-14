@@ -151,7 +151,7 @@ header a{
     background-color:#9db1a5;
     padding:8px 16px 6px 24px;
 }
-.basket > a{
+.basket_catalog > a{
     margin:0 0px 0 0;
     text-decoration: none;
     border-radius: 20px 20px;
@@ -181,7 +181,7 @@ header a{
     right: 8px;
     display: inline-block;
 }
-.basket > a:before{
+.basket_catalog > a:before{
     content:'';
     background-image: url('../img/header_sprite.png');
     background-repeat: no-repeat;
@@ -499,7 +499,6 @@ main{
     padding:5px 13px 0 13px;
 }
 .items_container a{
-    color:white;
     font-size: 16px;
     margin:14px 6px 10px 0px;
     line-height: 1.4;
@@ -822,7 +821,8 @@ main{
     height:2px;
     background-color:white;
     transform: rotate(135deg); 
-}footer{
+}
+footer{
     color:rgb(255, 255, 255);
     display: flex;
     max-height: 103px;

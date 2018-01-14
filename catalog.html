@@ -4,59 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style_catalog.css">
+    <link rel="stylesheet" href="css/style_index.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <title>Catalog</title>
 </head>
 <body>
     <div class="site-wrapper">
     <header>
-        <div class="logo">
-        <a href="index.html"><img src="img/logo.png"></a>
-    </div>
-    <div class="navigator">
-        <div class="menu">
-            <div class="catalog">
-                <a href="catalog.html">Каталог</a>
-                <div class="modal_catalog">
-                    <span>Новинки</span>
-                    <ul>
-                        <li><a href="#">Сливочное</a></li>
-                        <li><a href="#">Щербеты</a></li>
-                        <li><a href="#">Фруктовый лед</a></li>
-                        <li><a href="#">Мелорин</a></li>
-                    </ul>
-                </div>
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png"></a>
             </div>
-            <a href="#" class="a_header"><span>Доставка и оплата</span></a>
-            <a href="#" class="a_header"><span>О Компании</span></a>
-        </div>
-        <div class="modals">
-            <div class="search">
-                <a href="#" ></a>
-                        <div class="modal_search">
-            <form action="">
-        <input type="text" name="search" id="search" class="place_input" placeholder="Что ищем?">
-    </form>
-</div>
-</div>
-    <div class="login">
-            <a href="#">Вход</a>
-            <div class="modal_login">
-    <form id="login">
-        <input type="email" id="mail_login" name="login" class="place_input" placeholder="Электронная почта">
-        <input type="password" id="mail_password" name="login" class="place_input" placeholder="Пароль">
-            <div>
-                <button class="btn btn_login" form="login">Войти</button>
-                <div class="registr">
-                    <a href="#"><span>Забыли пароль?</span></a>
-                    <a href="#"><span>Новая регистрация</span></a>
-                </div>
+            <div class="navigator">
+                    <div class="menu">
+                        <div class="catalog">
+                            <a href="catalog.html">Каталог</a>
+                            <div class="modal_catalog">
+                                <span>Новинки</span>
+                                <ul>
+                                    <li><a href="#">Сливочное</a></li>
+                                    <li><a href="#">Щербеты</a></li>
+                                    <li><a href="#">Фруктовый лед</a></li>
+                                    <li><a href="#">Мелорин</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="a_header"><span>Доставка и оплата</span></a>
+                        <a href="#" class="a_header"><span>О Компании</span></a>
+                    </div>
+                    <div class="modals">
+                        <div class="search">
+                            <a href="#" ></a>
+                                    <div class="modal_search">
+                        <form action="">
+                    <input type="text" name="search" id="search" class="place_input" placeholder="Что ищем?">
+                </form>
             </div>
-    </form>
-</div>
-</div>
-    <div class="basket">
+            </div>
+                <div class="login">
+                        <a href="#">Вход</a>
+                        <div class="modal_login">
+                <form id="login">
+                    <input type="email" id="mail_login" name="login" class="place_input" placeholder="Электронная почта">
+                    <input type="password" id="mail_password" name="login" class="place_input" placeholder="Пароль">
+                        <div>
+                            <button class="btn btn_login" form="login">Войти</button>
+                            <div class="registr">
+                                <a href="#"><span>Забыли пароль?</span></a>
+                                <a href="#"><span>Новая регистрация</span></a>
+                            </div>
+                        </div>
+                </form>
+            </div>
+            </div>
+    <div class="basket basket_catalog">
             <a href="#">2 Товара</a>
             <div class="modal_basket">
                 <div class="basket_wrapper">
@@ -96,6 +96,7 @@
 
     </header>
     <main>
+        <div class="main_wrapper_catalog">
         <div class="breadcrumbs">
             <div>
             <span>
@@ -291,7 +292,7 @@
                                 <p><span>415₽</span>/кг</p>
                             </div>
                         </div>
-                        <div class="toogle">
+                        <div class="switcher">
                         <div>
                         <div class="switch_left">
                             <div></div>
@@ -316,13 +317,22 @@
                     </div>  
                     
                 </div>
+                </div>
         </main>
         <footer>
             <div class="contacts">
-                <a href="#" class="twitter"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+                <a href="#">
+                    <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32"><image width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAQ4MFQKaRjD2AAACLUlEQVRIx62VP2hTURTGf+fyCDStRoqtkBIJlZfJ6BL34GB1UCEdhAqF5+ISWiFQ3AUrgkPBPZMFETK4FTU4OmSLFuGVNrQQwaEQMW/QkOuQP7z73kubqGe73z3fd88599x7hAjTCfLksEkSBzyauNT4KK2wr4TINg7XsSJ0O1Qpi3uCgI6zxnJY1O9ChS3xIgX0Ii9IcbodUZL9kIDO8pLpMegAbYpSNwT0IuWx6T0JpxeF9HN/NVbwZiL3xQMFwNrEdEixDqBA2yxPTAcoaLsXgWNcnI7Id4s73GSDBtDkN4P6OSA6wY6vbQ55zjNmfHSPB7LX1z7LBX7xpp84dFhS5I2ua8gnVvnqQ8oDOsgPcZnl83DPIq/IGeGmQQ5Z5SkHfeSDf1vHuMUVH5CzsA2BizordelSoaLTZDnPkbG/QMFY2xZJA9jlsv4iXQBp0AgVdC6wTiriBnCO1z36CEsH1nEVVOSRVicI5IKAwgsgKzzWM9FsHeNaAPIUzZDfjvwccf5tzgSQpsINuW3o+cjzEzwMga6iFgIv8VY/0fEAPcYmsyHfWrCVDzjmG7u8l2ODPs8mV0P0DkuWtHSVG0Nomm3emTXQKe5yj6mIrKrSEtA228Z77LKHy3cUU8yRYWFESTUr4logrq4YP4IiQ4bTrSLu//rSxKNEeyJ6m1JvOvTbVvYpTiDRpjiYDMO+lzpO4OmODt4ZTIXwaFun8Nejre/xL8N1KDLBeP8DMgmqgz3VFTUAAAAASUVORK5CYII="/></svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32"><image width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAQ4MJxpkWvzRAAACBElEQVRIx62VsWtTURTGf+dxp+cQQadIEKpRVDJYgoNTyCB0UtKtRWgQcQntkMUKRURQlw6ClG6d6mZAiotDyB8Q2kKrUJ4WtBLELZQ8EGKPQ17ie7z7ap72bPec7/veuefe+z7BEpqhRJE8WVzAp4NHm5Z041iJkfNUKWMsun2arIl3jIC6zDMdFw1DaPBSfKuATrBMjr/HAXXZjwlogVecGoMO0KMmOxEBnWBtbPpAojroQoK9r4/VfHQjs+KDA8B8ajrkWAg60DyvQ8P8ylM+JZAu8ZjsaKXMiCegz7gVAs3JbvJn9QYroeV7eWQ0QzmC+WKh3WQO2JYV9iKFsmYMJeuti8YZJoFD4CiSN5QciqnHF46iIX/Mjq9zhyMabPME+G6B5E1oqn+IOX7IT51kFQeY4p5sqMtpi0DWwbWklzgLVIJbYrgNnKNuQbpOUvexzC870MG35q8BjWDmfd4CBSvOd+hYC3fVkU0e8I4N7ssHNcxYcR2Dx0VL4SoP9YVssQWghiUu8M2C8wxtpqzaFa7oOh8RCswmHnbb0GIxdhf3RiIVAA7ZBD4zfL3D6NMy0tVm5DGdZ1eWSYrLkVVTuifxnEEXmSZ9vJHnJ/VLE586vVT0HvWBOwRTlX1qKSR61IbOMDoW2aHKwZjNV4euELe2BSr/bG0B4n/MdSSSwt5/Ay21oFEcZa7pAAAAAElFTkSuQmCC"/></svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32"><image opacity=".8" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAQ4MKBgNzIEyAAABlElEQVRIx62VsU/CUBCHv3tpYoIQdhIXk45ubA4SZic249SdhIHNOJo4MZi4k5g4OMikK+EPYGNswkJkR2xdSM6hYJC+B4V6Y3/3+3r3XnsnWELL1KjiU6EAxEwJGTKQWTpXUmafgDqehbugT1fCLQAt0KKRhq6n0ONBYitAT+lwwu6Y0JZxCqBnPHKcwQ4Q0ZTRH4Ce0s1sTxBBUoUse392FP/KE58AvG28YMK1xGAAaDns73IvHzKXuczRDe2EFoAB9Wk4Cn3Z2kZDffCAwHlxEwBtA3CUUoWAG0/L1Hcc2JVTqWvZULN+ddnCo+ZRtUoRCsuD+wKgaM2revhW4VLmv63WAHRozfMNlYMbAKgYCrkABdcB3ukCuJVv0M42gkdsreF8qQJcbPHHhmmuFqaGMBcgNAxzAYaGAYuD7QsGRmb0Dwb0ZWaAbupfzxZKFwxISM+RUtSSlpyAnoS7R5o71keaxLSJ9rJHtJPtkMxEZExzD0REc7UZzOqZjAiSEZah+GC1Ff53tS0z8izXX8ge6/0HZDV9CGfd6JYAAAAASUVORK5CYII="/></svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32"><image opacity=".8" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAQ4MKQFwvBizAAAB5ElEQVRIx62VwWsTURCHv1keRbeWnA0USmFvDSIGvEZB0/bYFA8VhL2HlJKT/g9VBK9SEdRb7l7SQkt7SXvpoYWFohRy8BZqlgjB6SHb1ORt1t3q3Pa93+9j3uy8N0JMaI4SRTzyuEBIm4AWO9KxtWKZPXweY2K4fZpsSZAAUJcaFRv6p4QGbyWMBeg8m8zy9zinLmcWQAu8YzqFHaBLVY5HADrPVmr7AOEPspDo7J9SJT96kOcSggNALbMdZlkHcEA9KpntACvqgQH8mB/3SC6i6hhuc4c5KpTGNILPK9EcX2PaZgi4Dq3xYmypT9lQiu26gaXAA37xnQNR4IMFMJQMxYRTFqgCsMEu8JPfUdGvo+jgpS7afcsOniGfYDnlCz1O2QO9y8sYRd7gTvbLEUfDjyexneo6JIRO6YzO6BSAfOQZJ7bGIUwgrLLNNvv6Xl2QC95YitChnaJ891iIajIebYcgBaDHNwBy1k5gaLE00XjIa6DHvvwAYNFStLK08kM2uTWy1KdspKNNniblry7TeJRZti5dUzoC6vE58SGdSGZNAgckoHEDOzQk+F9PmoTU6Wayd6kPpkPUynJGNQOiS/VqMgzvghzjc54yef9qKtijbZ2VG4+2SPEvw3UIyTDeLwGOnpP9ZhvEpQAAAABJRU5ErkJggg=="/></svg>
+                </a>
             </div>
             <div class="information">
                 <a href="#">Для поставщиков</a>
@@ -331,8 +341,8 @@
                 <a href="#">Экологические стандарты</a>
             </div>
             <div class="creator">
-                <span>Сделано <a href="#">HTML Academy</a> © 2017</span>
-            </div>
+                    <p>Сделано в <a href="#">HTML Academy</a> © 2017</p>
+                </div>
 
         </footer>
     </div>
