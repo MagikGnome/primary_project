@@ -122,8 +122,8 @@ header a{
 .catalog > a:first-child{
     background-color:#d07058;
 }
-.catalog:hover{
-    padding:0 0 2px 0;
+.catalog:active > a:first-child{
+    box-shadow: inset 0px 3px 2px 0px rgba(105, 105, 105, 0.7);
 }
 .work_hours p{
     text-align: right;
