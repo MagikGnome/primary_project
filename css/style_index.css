@@ -1282,6 +1282,9 @@ footer a:hover{
 .feedback_header{
     display: flex;
 }
+.feedback_header h2{
+    color:black;
+}
 .feedback_close{
     cursor: pointer;
     margin:0 0 0 40px;
